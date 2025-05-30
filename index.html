@@ -1,1 +1,31 @@
-<html><body><h1>Moje první stránka</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Šnek závodí</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="track">
+  <img id="snail" src="img/snek.png" class="snail" style="left: 0;">
+</div>
+
+<div id="problem" class="problem"></div>
+
+<div class="options" id="options"></div>
+
+<div class="message" id="message"></div>
+
+<div id="victory-screen" style="display:none; text-align:center;">
+  <img src="img/vitezny_snek.png">
+  <br>
+  <button onclick="resetGame()">Opakovat</button>
+</div>
+
+<audio id="sound-correct" src="https://assets.mixkit.co/sfx/preview/mixkit-fast-car-pass-by-1532.mp3"></audio>
+<audio id="sound-wrong" src="https://assets.mixkit.co/sfx/preview/mixkit-cartoon-fail-blow-3211.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

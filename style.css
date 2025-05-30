@@ -1,0 +1,90 @@
+
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.track {
+  position: relative;
+  width: 90%;
+  height: 300px;
+  margin: 30px auto;
+  background-image: url('img/draha.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid #4caf50;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.snail {
+  position: absolute;
+  top: 75%;
+  transform: translateY(-50%);
+  width: 250px;
+  transition: left 0.5s, transform 0.5s;
+}
+
+.problem {
+  margin: 20px 0;
+}
+
+.formula {
+  font-size: 100px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.options button {
+  padding: 15px 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 10px;
+  background-color: #5ca75c;
+  color: white;
+  cursor: pointer;
+}
+
+.options button:hover {
+  background-color: #4e8f4e;
+}
+
+.message {
+  font-size: 24px;
+  color: #d32f2f;
+  margin: 20px 0;
+}
+
+.correct .formula {
+  color: green;
+}
+
+.wrong .formula {
+  color: red;
+}
+
+#victory-screen img {
+  width: 100%;
+  max-width: 600px;
+}
+
+#victory-screen button {
+  padding: 15px 30px;
+  font-size: 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
